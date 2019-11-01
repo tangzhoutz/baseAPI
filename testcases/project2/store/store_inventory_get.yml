@@ -1,0 +1,18 @@
+args:
+- get
+- /store/inventory
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+kwargs:
+- caseName: store_inventory_get
+  data:
+    additionalMetadata: "{'in': 'formData', 'description': 'Additional data to pass\
+      \ to server', 'required': False, 'type': 'string'}"
+    file: "{'in': 'formData', 'description': 'file to upload', 'required': False,\
+      \ 'type': 'file'}"
+validator:
+- code:
+    successed: '200'

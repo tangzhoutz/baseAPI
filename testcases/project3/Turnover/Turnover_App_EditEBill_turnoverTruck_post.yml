@@ -1,0 +1,48 @@
+args:
+- post
+- /Turnover/App_EditEBill_turnoverTruck
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+  Content-Type: application/json;charset=UTF-8
+kwargs:
+- caseName: Turnover_App_EditEBill_turnoverTruck_post
+  params:
+    LoadId: "{'in': 'query', 'required': True, 'type': 'string'}"
+    Bill_Id: "{'in': 'query', 'required': True, 'type': 'string'}"
+    IfAssign: "{'in': 'query', 'required': True, 'type': 'string'}"
+    UserID: "{'in': 'query', 'required': True, 'type': 'string'}"
+  json:
+    ID: "{'type': 'string'}"
+    Org_id: "{'type': 'string'}"
+    Org_Name: "{'type': 'string'}"
+    TruckID: "{'type': 'string'}"
+    OrgType: "{'type': 'string'}"
+    TruckNo: "{'type': 'string'}"
+    TruckType: "{'type': 'string'}"
+    TruckLength: "{'type': 'string'}"
+    End_date: "{'format': 'date-time', 'type': 'string'}"
+    TruckLicense: "{'type': 'string'}"
+    Yxf: "{'type': 'string'}"
+    PicTruckLicense: "{'type': 'string'}"
+    State: "{'type': 'string'}"
+    TruckTypeName: "{'type': 'string'}"
+    TruckLengthName: "{'type': 'string'}"
+    IsGc: "{'type': 'string'}"
+    IsTemp: "{'type': 'string'}"
+    IsTempName: "{'type': 'string'}"
+    RFID: "{'type': 'string'}"
+    GpsCode: "{'type': 'string'}"
+    OldGpsCode: "{'type': 'string'}"
+    Msg: "{'type': 'string'}"
+    PageSize: "{'format': 'int32', 'type': 'integer'}"
+    PageNumber: "{'format': 'int32', 'type': 'integer'}"
+    sortName: "{'type': 'string'}"
+    sortOrder: "{'type': 'string'}"
+    filter: "{'type': 'string'}"
+    isAllowPage: "{'type': 'boolean'}"
+validator:
+- code:
+    successed: '200'

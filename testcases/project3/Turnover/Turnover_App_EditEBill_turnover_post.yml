@@ -1,0 +1,24 @@
+args:
+- post
+- /Turnover/App_EditEBill_turnover
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+kwargs:
+- caseName: Turnover_App_EditEBill_turnover_post
+  params:
+    LoadId: "{'in': 'query', 'required': True, 'type': 'string'}"
+    Bill_Id: "{'in': 'query', 'required': True, 'type': 'string'}"
+    IfAssign: "{'in': 'query', 'required': True, 'type': 'string'}"
+    TruckNo: "{'in': 'query', 'required': True, 'type': 'string'}"
+    GTruckNo: "{'in': 'query', 'required': True, 'type': 'string'}"
+    phoneNo: "{'in': 'query', 'required': True, 'type': 'string'}"
+    QueueID: "{'in': 'query', 'required': True, 'type': 'string'}"
+    Diya: "{'in': 'query', 'required': True, 'type': 'string'}"
+    RFID: "{'in': 'query', 'required': True, 'type': 'string'}"
+    UserID: "{'in': 'query', 'required': True, 'type': 'string'}"
+validator:
+- code:
+    successed: '200'

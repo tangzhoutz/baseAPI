@@ -1,0 +1,13 @@
+args:
+- get
+- /pet/{petId}
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+kwargs:
+- caseName: pet_petId_get
+validator:
+- code:
+    successed: '200'

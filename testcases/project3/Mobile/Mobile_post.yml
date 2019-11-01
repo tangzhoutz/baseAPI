@@ -1,0 +1,18 @@
+args:
+- post
+- /Mobile
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+  Content-Type: application/json;charset=UTF-8
+kwargs:
+- caseName: Mobile_post
+  params:
+    targetSizeW: "{'in': 'query', 'required': True, 'type': 'integer', 'format': 'int32'}"
+    targetSizeH: "{'in': 'query', 'required': True, 'type': 'integer', 'format': 'int32'}"
+  json: "{'format': 'byte', 'type': 'string'}"
+validator:
+- code:
+    successed: '200'

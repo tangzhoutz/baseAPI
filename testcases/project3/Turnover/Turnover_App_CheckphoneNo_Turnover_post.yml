@@ -1,0 +1,18 @@
+args:
+- post
+- /Turnover/App_CheckphoneNo_Turnover
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+kwargs:
+- caseName: Turnover_App_CheckphoneNo_Turnover_post
+  params:
+    phoneNo: "{'in': 'query', 'required': True, 'type': 'string'}"
+    LoadId: "{'in': 'query', 'required': True, 'type': 'string'}"
+    Bill_Id: "{'in': 'query', 'required': True, 'type': 'string'}"
+    IfAssign: "{'in': 'query', 'required': True, 'type': 'string'}"
+validator:
+- code:
+    successed: '200'

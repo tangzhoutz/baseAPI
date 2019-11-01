@@ -1,0 +1,13 @@
+platformName: Android
+platformVersion: '7.0'
+deviceName: A5RNW18316011440
+appPackage: com.tencent.mm
+appActivity: .ui.LauncherUI
+automationName: Uiautomator2
+unicodeKeyboard:
+- true
+- hh
+resetKeyboard: true
+noReset: true
+'#chromeOptions':
+  androidProcess: com.tencent.mm:tools

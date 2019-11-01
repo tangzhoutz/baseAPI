@@ -1,0 +1,12 @@
+args:
+  - post
+  - /xxx/add2
+kwargs:
+  -
+    caseName: 新增xxx
+    data:
+      name: (aaaasdsad)
+validator:
+  -
+    json:
+      successed: True

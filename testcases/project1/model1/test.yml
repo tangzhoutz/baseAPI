@@ -1,0 +1,25 @@
+args:
+  - post
+  - /TrackDev/SysVersion/FindVersionList
+kwargs:
+  -
+    caseName: 新增xxx
+    data:
+      pageSize: 14
+      pageNumber: 1
+      sortOrder: aec
+      vernumber: ''
+      vertitle: ''
+  - caseName: 新增2222
+    data:
+      pageSize: 14
+      pageNumber: 1
+      sortOrder: aec
+      vernumber: ''
+      vertitle: ''
+validator:
+  -
+    json:
+      successed: True
+  - json:
+      successed: True

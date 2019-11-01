@@ -1,0 +1,46 @@
+args:
+- post
+- /Turnover/App_EditEBill_turnoverDriver
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+  Content-Type: application/json;charset=UTF-8
+kwargs:
+- caseName: Turnover_App_EditEBill_turnoverDriver_post
+  params:
+    LoadId: "{'in': 'query', 'required': True, 'type': 'string'}"
+    Bill_Id: "{'in': 'query', 'required': True, 'type': 'string'}"
+    IfAssign: "{'in': 'query', 'required': True, 'type': 'string'}"
+    UserID: "{'in': 'query', 'required': True, 'type': 'string'}"
+  json:
+    ID: "{'type': 'string'}"
+    Org_id: "{'type': 'string'}"
+    Org_Name: "{'type': 'string'}"
+    DriverID: "{'type': 'string'}"
+    OrgType: "{'type': 'string'}"
+    OrgState: "{'type': 'string'}"
+    OrgStateName: "{'type': 'string'}"
+    DriverName: "{'type': 'string'}"
+    Id_number: "{'type': 'string'}"
+    Driver_license: "{'type': 'string'}"
+    End_date: "{'format': 'date-time', 'type': 'string'}"
+    phoneNo: "{'type': 'string'}"
+    PicDriver_license: "{'type': 'string'}"
+    DriverType: "{'type': 'string'}"
+    Id_numberpic01: "{'type': 'string'}"
+    Id_numberpic02: "{'type': 'string'}"
+    State: "{'type': 'string'}"
+    isValid: "{'format': 'int32', 'type': 'integer'}"
+    isValidStr: "{'type': 'string'}"
+    Msg: "{'type': 'string'}"
+    PageSize: "{'format': 'int32', 'type': 'integer'}"
+    PageNumber: "{'format': 'int32', 'type': 'integer'}"
+    sortName: "{'type': 'string'}"
+    sortOrder: "{'type': 'string'}"
+    filter: "{'type': 'string'}"
+    isAllowPage: "{'type': 'boolean'}"
+validator:
+- code:
+    successed: '200'

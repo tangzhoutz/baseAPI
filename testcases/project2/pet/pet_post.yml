@@ -1,0 +1,27 @@
+args:
+- post
+- /pet
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+  Content-Type: application/json;charset=UTF-8
+kwargs:
+- caseName: pet_post
+  proxy: 'http://192.168.1.168:8888'
+  json:
+    id: "{'type': 'integer', 'format': 'int64'}"
+    category:
+      id: "{'type': 'integer', 'format': 'int64'}"
+      name: "{'type': 'string'}"
+    name: "{'type': 'string', 'example': 'doggie'}"
+    status: "['available', 'pending', 'sold']"
+    photoUrls:
+    - "{'type': 'string'}"
+    tags:
+    - id: "{'type': 'integer', 'format': 'int64'}"
+      name: "{'type': 'string'}"
+validator:
+- code:
+    successed: '200'

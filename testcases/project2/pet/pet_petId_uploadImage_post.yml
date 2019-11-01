@@ -1,0 +1,20 @@
+args:
+- post
+#- /pet/{petId}/uploadImage
+- /pet/petId/uploadImage
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+  Content-Type: multipart/form-data
+kwargs:
+- caseName: pet_petId_uploadImage_post
+  proxy: 'http://192.168.1.168:8888'
+  data:
+    additionalMetadata: "{'in': 'formData', 'description': 'Additional data to pass\
+      \ to server', 'required': False, 'type': 'string'}"
+    file: "D:\\test\\项目1\\单据\\库存解析单物料1.xlsx"
+validator:
+- code:
+    successed: '200'

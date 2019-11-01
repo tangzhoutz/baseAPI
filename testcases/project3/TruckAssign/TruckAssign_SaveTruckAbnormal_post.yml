@@ -1,0 +1,24 @@
+args:
+- post
+- /TruckAssign/SaveTruckAbnormal
+headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  Connection: keep-alive
+  Accept: application/json, text/javascript, */*
+kwargs:
+- caseName: TruckAssign_SaveTruckAbnormal_post
+  params:
+    iAbnormalID: "{'in': 'query', 'required': True, 'type': 'integer', 'format': 'int32'}"
+    sUser_Id: "{'in': 'query', 'required': True, 'type': 'string'}"
+    s1: "{'in': 'query', 'required': True, 'type': 'string'}"
+    t1: "{'in': 'query', 'required': True, 'type': 'string'}"
+    s2: "{'in': 'query', 'required': True, 'type': 'string'}"
+    t2: "{'in': 'query', 'required': True, 'type': 'string'}"
+    s3: "{'in': 'query', 'required': True, 'type': 'string'}"
+    t3: "{'in': 'query', 'required': True, 'type': 'string'}"
+    s4: "{'in': 'query', 'required': True, 'type': 'string'}"
+    t4: "{'in': 'query', 'required': True, 'type': 'string'}"
+validator:
+- code:
+    successed: '200'
