@@ -19,6 +19,7 @@ def pytest_addoption(parser):
         "--tf", nargs='*', action="store",default=test_files, help="请输入测试用例文件yml，输入后--rootdir参数无效"
     )
 
+
 @pytest.fixture(scope='session')
 def test_cases(request):
     """

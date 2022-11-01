@@ -143,13 +143,13 @@ if __name__ == "__main__":
 
     # data = test_impl(create_test_data(r'D:\pyworkspace\python1\testcases'))
     # print(data)
-    # test_cases_files = create_test_case_files(case_dir=r'D:\pyworkspace\python1\testcases', test_result=data)
-    # print(test_cases_files)
-    import argparse
-
-    parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('--tf', nargs='*', action="store", default=[], help="my option: 请输入测试用例文件 和 --")
-    parser.add_argument('--te', nargs='*', action="store", default=[], help="my option: 请输入测试用例文件 和 --")
-    parser.add_argument("--rootdir", nargs='*',action="store", default=[r'D:\pyworkspace\baseAPI\testcases'], help="请输入测试用例目录，输入--tf后此参数无效")
-    print(parser.parse_args(r'--rootdir D:\pyworkspace\baseAPI\testcases'.split()))
+    test_cases_files = create_test_cases(case_dirs=[r'D:\pyworkspace\baseAPI\testcases'])
+    print(test_cases_files)
+    # import argparse
+    #
+    # parser = argparse.ArgumentParser(description='Process some integers.')
+    # parser.add_argument('--tf', nargs='*', action="store", default=[], help="my option: 请输入测试用例文件 和 --")
+    # parser.add_argument('--te', nargs='*', action="store", default=[], help="my option: 请输入测试用例文件 和 --")
+    # parser.add_argument("--rootdir", nargs='*',action="store", default=[r'D:\pyworkspace\baseAPI\testcases'], help="请输入测试用例目录，输入--tf后此参数无效")
+    # print(parser.parse_args(r'--rootdir D:\pyworkspace\baseAPI\testcases'.split()))
 
