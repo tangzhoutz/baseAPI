@@ -13,6 +13,7 @@ def validator(response,validata):
     if isinstance(validata,dict) and validata.get('code'):
         real_code=response.get('response').get('code')
         expect_code=validata.get('code')
+
         if expect_code.get('successed'):
             assert str(expect_code.get('successed'))==str(real_code)
         elif expect_code.get('unsuccessed'):
